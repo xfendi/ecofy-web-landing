@@ -1,0 +1,23 @@
+.btn {
+    background-color: #22c55e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    transition: all .3s;
+}
+.btn:hover {
+    background-color: #1cb053;
+}
+
+.link {
+    color: #000000bc;
+    transition: all 0.3s;
+}
+.link:hover {
+    color: black;
+}
+
+nav,
+nav * {
+    transition: all 3s;
+}
