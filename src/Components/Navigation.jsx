@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import LogoBig from "../Assets/logo-text.png";
+import LogoBig from "../Assets/ecofy-text.png";
 
 const Navigation = () => {
   const [isScrolling, setIsScrolling] = useState(false);
