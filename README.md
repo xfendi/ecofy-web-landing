@@ -10,26 +10,20 @@ Ecofy is a platform dedicated to promoting sustainable practices and ecological 
 - **Interactive Elements**: Engaging components to help users learn more about sustainability.
 - **Contact and Feedback**: Dedicated sections for user interaction and queries.
 
-## Project Structure
-```plaintext
-/ecofy-website
-|-- public
-|   |-- index.html
-|-- src
-|   |-- components
-|   |   |-- Navigation.js
-|   |   |-- Footer.js
-|   |   |-- Hero.js
-|   |-- pages
-|   |   |-- Home.js
-|   |   |-- About.js
-|   |   |-- Services.js
-|   |   |-- Contact.js
-|-- .env
-|-- README.md
-|-- package.json
-|-- tailwind.config.js
-```
+## App Structure
+- `public/`
+  - `index.html`
+- `src/`
+  - `Pages/`
+    - `index`
+    - `contact`
+    - `about`
+  - `Components/`
+    - `Navigation`
+    - `Footer`
+    - `Hero`
+- `.env`
+- `.tailwind.config.js`
 
 ## Contributing
 1. Fork the repository.
