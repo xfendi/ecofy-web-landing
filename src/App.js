@@ -5,6 +5,8 @@ import Landing from "./Pages/Landing";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
 
+import "./Styles/Public.css";
+
 const App = () => {
   return (
     <BrowserRouter>
