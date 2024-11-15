@@ -43,6 +43,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 For any inquiries, please reach out to:
-- **Email**: support@ecofy.com
+- **Email**: SOON
 - **Website**: SOON
 - **GitHub Issues**: Feel free to open an issue for any bugs or feature requests.
