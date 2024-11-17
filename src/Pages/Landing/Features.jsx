@@ -8,7 +8,7 @@ const Features = () => {
   return (
     <section id="features" className="flex flex-col gap-20 justify-center text-center my-20">
       <div className="flex flex-col gap-5 h-max md:w-[80%] m-auto">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-4xl sm:text-6xl font-bold">
           Meet our most popular features save environment
         </h1>
         <p className="text-lg text-gray-500 m-auto">
@@ -54,10 +54,10 @@ const Features = () => {
       </div>
 
       <div className="flex flex-col gap-20 justify-center">
-        <div className="flex sm:flex-row flex-col gap-10 h-[450px]">
-          <div className="bg-green-200 flex-1 rounded-3xl"></div>
+        <div className="flex sm:flex-row flex-col gap-10 h-max sm:h-[450px]">
+          <div className="bg-green-200 flex-1 rounded-3xl sm:flex hidden"></div>
           <div className="flex-1 text-start flex flex-col gap-5 sm:my-10">
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-3xl md:text-5xl font-bold">
               Participation in Eco-Friendly Challenges and Community Tasks
             </h1>
             <p className="text-lg text-gray-500">
@@ -69,9 +69,9 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="flex sm:flex-row flex-col gap-10 h-[450px]">
+        <div className="flex sm:flex-row flex-col gap-10 h-max sm:h-[450px]">
           <div className="flex-1 text-start flex flex-col gap-5 sm:my-10">
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-3xl md:text-5xl font-bold">
               Comprehensive Education and Resource Hub on Environmental
               Protection
             </h1>
@@ -82,7 +82,7 @@ const Features = () => {
               eco-friendly habits in their daily lives.
             </p>
           </div>
-          <div className="bg-blue-200 flex-1 rounded-3xl"></div>
+          <div className="bg-blue-200 flex-1 rounded-3xl sm:flex hidden"></div>
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <header className="flex flex-col gap-20 justify-center text-center my-20">
       <div className="flex flex-col gap-5 h-max md:w-[80%] m-auto">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-4xl sm:text-6xl font-bold">
           Save Your Environment and Explore ecology map
         </h1>
         <p className="text-lg text-gray-500 m-auto">

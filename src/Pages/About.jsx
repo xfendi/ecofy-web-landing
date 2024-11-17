@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="flex flex-col gap-20 my-20">
       <div className="flex flex-col gap-20 text-start justify-center m-auto">
-        <h1 className="text-3xl md:text-6xl font-semibold text-gray-400">
+        <h1 className="text-3xl sm:text-6xl font-semibold text-gray-400">
           <span className="text-black">
             At Ecofy, we aim to make eco-awareness easy and accessible.
           </span>{" "}

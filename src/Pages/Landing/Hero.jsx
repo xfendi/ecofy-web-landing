@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <section className="bg-yellow-200 rounded-3xl my-20">
       <div className="flex flex-col gap-5 items-center justify-center text-center my-20 w-[85%] m-auto">
-        <img src={Leaf} alt="Ecofy" className="w-32" />
-        <h1 className="text-6xl font-bold">
+        <img src={Leaf} alt="Ecofy" className="w-20 sm:w-32" />
+        <h1 className="text-4xl sm:text-6xl font-bold">
           Join the Movement for a Greener Future Today!
         </h1>
         <p className="text-lg text-gray-500">

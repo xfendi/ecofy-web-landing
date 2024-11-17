@@ -17,6 +17,14 @@
   background-color: #000000db;
 }
 
+.btn.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+.btn.light:hover {
+  background-color: #ffffffdb;
+}
+
 .link {
   color: #000000af;
   transition: all 0.3s;
@@ -41,7 +49,7 @@
     padding-bottom: 104px !important;
   }
   
-  nav > ul {
+  nav > div > ul {
     position: fixed !important;
     left: 20px;
     right: 20px;
@@ -51,7 +59,7 @@
     flex-direction: row !important;
     padding: 20px;
   }
-  nav > ul > li > a {
+  nav > div > ul > li > a {
     color: white !important;
   }
 }
