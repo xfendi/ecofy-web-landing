@@ -13,13 +13,8 @@ const Navigation = () => {
       </NavLink>
       <ul className="flex flex-row gap-5 items-center rounded-3xl z-50">
         <li>
-          <NavLink to="#features" className="link">
-            Features
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="#about" className="link">
-            About us
+          <NavLink to="/about" className="link">
+            About Us
           </NavLink>
         </li>
         <li>
@@ -29,7 +24,7 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink to="/contact" className="link">
-            contact
+            Contact
           </NavLink>
         </li>
       </ul>
