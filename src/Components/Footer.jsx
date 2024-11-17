@@ -30,7 +30,12 @@ const Footer = () => {
             Subscribe
           </button>
         </div>
-        <p>© 2024 Ecofy, Inc. All rights reserved.</p>
+        <div className="flex gap-1">
+          <p>© 2024 Ecofy, Inc. All rights reserved.</p>{" "}
+          <a href="/privacy-policy" className="underline">
+            privacy policy
+          </a>
+        </div>
       </div>
       <div className="flex flex-col gap-5 items-start text-start flex-1 w-full rounded-3xl">
         <div className="flex flex-col gap-5">

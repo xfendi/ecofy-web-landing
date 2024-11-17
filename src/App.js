@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./Pages/Landing";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import Privacy from "./Pages/Privacy";
 
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
         </Routes>
         <Footer />
       </BrowserRouter>
