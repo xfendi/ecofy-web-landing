@@ -12,9 +12,9 @@ const Privacy = () => {
           </span>{" "}
           <br />
           Welcome to <span className="text-green-500 font-bold">
-            Sitezy
+            Ecofy
           </span>{" "}
-          ("we," "our," or "us"). <br />
+          <span className="text-black">("we," "our," or "us")</span> <br />
           We respect your privacy and are committed to protecting your personal
           data. This policy outlines how we collect, use, and safeguard your
           information when you use our website and services.
@@ -92,11 +92,15 @@ const Privacy = () => {
             9. Contact Us
           </span>{" "}
           <br />
-          For questions or concerns about your privacy, please contact us at
-          privacy@sitezy.xyz.
+          For questions or concerns about your privacy, please contact us at{" "}
+          <span className="text-black">support@ecofy.site</span> or by using{" "}
+          <a href="/contact" className="text-black underline">
+            contact form
+          </a>
           <br />
           <br />
-          This Privacy Policy was last updated on 17.11.2024.
+          This Privacy Policy was last updated on{" "}
+          <span className="text-black">17.11.2024</span>
         </p>
 
         <a href="/" className="btn dark w-max">
