@@ -15,7 +15,7 @@ const Landing = () => {
           your goals. It empowers you to make eco-friendly choices while
           maximizing efficiency and results.
         </p>
-        <a href="/" className="btn dark m-auto">
+        <a href="/updates" className="btn dark m-auto">
           Get Started with Ecofy Beta
         </a>
       </div>

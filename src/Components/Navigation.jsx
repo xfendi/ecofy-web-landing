@@ -28,7 +28,7 @@ const Navigation = () => {
           </li>
         </ul>
       </div>
-      <NavLink to="/" className={`btn transition-opacity duration-500`}>
+      <NavLink to="/updates" className="btn">
         Get Beta Version
       </NavLink>
     </nav>

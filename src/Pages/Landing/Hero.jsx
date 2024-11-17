@@ -16,7 +16,7 @@ const Hero = () => {
           planting, or an educational workshop, Ecofy makes it easy to discover
           and participate in sustainable activities.
         </p>
-        <a href="/" className="btn dark m-auto">
+        <a href="/updates" className="btn dark m-auto">
           Get Started with Ecofy Beta
         </a>
       </div>
