@@ -6,6 +6,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Updates from "./Pages/Updates";
 import Privacy from "./Pages/Privacy";
+import Review from "./Pages/Review";
 
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/updates" element={<Updates />} />
+          <Route path="/new-review" element={<Review />} />
           <Route path="/privacy-policy" element={<Privacy />} />
         </Routes>
         <Footer />
