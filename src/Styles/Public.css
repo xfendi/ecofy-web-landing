@@ -1,23 +1,57 @@
 .btn {
-    background-color: #22c55e;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 9999px;
-    transition: all .3s;
+  background-color: #22c55e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  transition: all 0.3s;
 }
 .btn:hover {
-    background-color: #1cb053;
+  background-color: #1cb053;
+}
+
+.btn.dark {
+  background-color: #000000;
+  color: white;
+}
+.btn.dark:hover {
+  background-color: #000000db;
 }
 
 .link {
-    color: #000000bc;
-    transition: all 0.3s;
+  color: #000000af;
+  transition: all 0.3s;
 }
 .link:hover {
-    color: black;
+  color: black;
 }
 
-nav,
-nav * {
-    transition: all 3s;
+.image-bg::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  z-index: 0;
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding-bottom: 104px !important;
+  }
+  
+  nav > ul {
+    position: fixed !important;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    justify-content: center;
+    background-color: #22c55e;
+    flex-direction: row !important;
+    padding: 20px;
+  }
+  nav > ul > li > a {
+    color: white !important;
+  }
 }

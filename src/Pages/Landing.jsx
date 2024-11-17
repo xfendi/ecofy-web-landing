@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const landing = () => {
+import Header from "./Landing/Header";
+import Features from "./Landing/Features";
+import Ratings from "./Landing/Ratings";
+import Hero from "./Landing/Hero";
+
+const Landing = () => {
   return (
-    <div>landing</div>
-  )
-}
+    <>
+      <Header />
+      <Features />
+      <Ratings />
+      <Hero />
+    </>
+  );
+};
 
-export default landing
+export default Landing;

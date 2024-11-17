@@ -9,13 +9,15 @@ import "./Styles/Public.css";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <div className="app p-5 !px-5 md:!px-[10vw] flex flex-col gap-5">
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 };
 
