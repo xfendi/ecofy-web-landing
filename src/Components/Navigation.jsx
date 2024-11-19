@@ -8,8 +8,6 @@ import { IoMenu } from "react-icons/io5";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(true);
 
-  console.log(isOpen);
-
   const menuRef = useRef();
 
   useEffect(() => {

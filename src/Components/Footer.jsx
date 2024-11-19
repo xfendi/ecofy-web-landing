@@ -1,14 +1,43 @@
 import React, { useState } from "react";
 
+import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../firebase";
+
 import { AiOutlineDiscord, AiFillGithub } from "react-icons/ai";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(`Subscribed to the newsletter with email: ${email}`);
+  const resetAllStates = () => {
     setEmail("");
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const q = query(
+        collection(db, "subscriptions"),
+        where("email", "==", email)
+      );
+      const querySnapshot = await getDocs(q);
+
+      if (!querySnapshot.empty) {
+        resetAllStates();
+        alert("You have already submitted!");
+        return;
+      }
+
+      await addDoc(collection(db, "subscriptions"), {
+        email,
+      });
+
+      resetAllStates();
+      alert("Subscription submitted successfully!");
+    } catch (e) {
+      alert(e.message);
+      console.error("Błąd: ", e);
+    }
   };
 
   return (
@@ -18,21 +47,25 @@ const Footer = () => {
         <p className="text-lg text-gray-500 max-w-72">
           Stay updated with the latest events, tips, and eco news.
         </p>
-        <div className="flex flex-col xl:flex-row gap-5 w-full">
+        <form
+          onSubmit={(e) => handleSubmit(e)}
+          className="flex flex-col xl:flex-row gap-5 w-full"
+        >
           <input
             type="email"
             value={email}
             placeholder="Email"
             className="rounded-full xl:w-80 w-full py-3 xl:py-0 px-5"
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
-          <button onClick={(e) => handleSubmit(e)} className="btn dark">
+          <button type="submit" className="btn dark">
             Subscribe
           </button>
-        </div>
+        </form>
         <div className="flex flex-col sm:flex-row gap-1">
           <p>© 2024 Ecofy, Inc. All rights reserved.</p>{" "}
-          <a href="/privacy-policy" className="underline">
+          <a href="/privacy-policy" className="underline w-max">
             privacy policy
           </a>
         </div>
