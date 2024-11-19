@@ -16,7 +16,7 @@ import "./Styles/Public.css";
 
 const App = () => {
   return (
-    <div className="app p-5 !px-5 md:!px-[10vw] flex flex-col gap-5">
+    <div className="p-5 md:!pt-5 md:!p-[10vw] flex flex-col gap-5">
       <BrowserRouter>
         <Navigation />
         <Routes>

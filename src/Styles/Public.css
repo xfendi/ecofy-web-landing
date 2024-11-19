@@ -45,19 +45,27 @@
 }
 
 @media (max-width: 640px) {
-  .app {
-    padding-bottom: 104px !important;
-  }
-  
   nav > div > ul {
-    position: fixed !important;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    opacity: 0;
+    transition: all .3s;
+    position: absolute !important;
+    display: flex !important;
+    left: 0;
+    right: 0;
+    top: 100%;
     justify-content: center;
     background-color: #22c55e;
     flex-direction: row !important;
-    padding: 20px;
+    padding: 12px;
+  }
+
+  .menu-burger {
+    display: flex !important;
+  }
+  
+  nav > div > ul.open {
+    top: calc(100% + 20px);
+    opacity: 1;
   }
   nav > div > ul > li > a {
     color: white !important;
@@ -65,13 +73,13 @@
 }
 
 /* Customize the label (the container) */
-.container {
+.container-label {
   cursor: pointer;
   width: max-content;
 }
 
 /* Hide the browser's default checkbox */
-.container input {
+.container-label input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -97,7 +105,7 @@
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container-label input:checked ~ .checkmark {
   background-color: #22c55e;
 }
 
@@ -110,12 +118,12 @@
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container-label input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+.container-label .checkmark:after {
   left: 9px;
   top: 6px;
   width: 7px;

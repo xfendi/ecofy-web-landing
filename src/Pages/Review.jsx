@@ -132,7 +132,7 @@ const Review = () => {
             </span>
           ))}
         </div>
-        <label className="flex flex-row items-center gap-2 container">
+        <label className="flex flex-row items-center gap-2 container-label">
           <input type="checkbox" name="terms" required />
           <span class="checkmark"></span>
           <label className="text-gray-500">

@@ -26,12 +26,12 @@ const Contact = () => {
           we'll respond within 24 hours
         </p>
       </div>
-      <div className="flex flex-row gap-5">
+      <div className="flex flex-col md:flex-row gap-5">
         <form
           onSubmit={(e) => handleSubmit(e)}
           className="flex-1 bg-gray-100 rounded-3xl p-5 flex flex-col gap-5"
         >
-          <div className="flex flex-row gap-5">
+          <div className="flex flex-col sm:flex-row gap-5">
             <div className="flex flex-col items-start flex-1 gap-1">
               <label htmlFor="fname" className="font-bold">
                 First Name
@@ -89,10 +89,10 @@ const Contact = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-          <label className="flex flex-row items-center gap-2 container">
+          <label className="flex flex-row items-center gap-2 container-label">
             <input type="checkbox" name="terms" required />
             <span class="checkmark"></span>
-            <label className="text-gray-500">
+            <label className="text-gray-500 text-start">
               I agree to our friendly{" "}
               <a
                 href="/privacy-policy"

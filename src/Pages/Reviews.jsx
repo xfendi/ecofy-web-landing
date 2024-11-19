@@ -27,7 +27,7 @@ const Reviews = () => {
           All reviews about Ecofy
         </h1>
       </div>
-      <div className=" flex flex-col gap-20">
+      <div className="flex flex-col gap-20">
         {reviews.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 m-auto">
             {reviews.map((review, index) => (

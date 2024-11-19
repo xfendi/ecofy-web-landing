@@ -30,7 +30,7 @@ const Footer = () => {
             Subscribe
           </button>
         </div>
-        <div className="flex gap-1">
+        <div className="flex flex-col sm:flex-row gap-1">
           <p>© 2024 Ecofy, Inc. All rights reserved.</p>{" "}
           <a href="/privacy-policy" className="underline">
             privacy policy
@@ -44,17 +44,17 @@ const Footer = () => {
             <a
               href="https://discord.gg/Jm4jq7qykA"
               target="_blank"
-              className="btn light flex flex-row gap-3 items-center text-xl w-max"
+              className="btn light flex flex-row gap-3 items-center w-max"
             >
-              <AiOutlineDiscord size={32} />
+              <AiOutlineDiscord size={24} />
               Discord
             </a>
             <a
               href="/"
               target="_blank"
-              className="btn light flex flex-row gap-3 items-center text-xl w-max"
+              className="btn light flex flex-row gap-3 items-center w-max"
             >
-              <AiFillGithub size={32} />
+              <AiFillGithub size={24} />
               GitHub
             </a>
           </div>

@@ -29,11 +29,11 @@ const Ratings = () => {
       </div>
       <div className=" flex flex-col gap-20">
         {reviews.length > 0 ? (
-          <div className="flex flex-row gap-5 w-max m-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 m-auto">
             {reviews.slice(0, 3).map((review, index) => (
               <div
                 key={index}
-                className="border rounded-3xl p-5 text-start min-w-[250px] max-w-[350px]"
+                className="border rounded-3xl p-5 text-start flex-1"
               >
                 <div className="flex justify-between gap-5 items-center">
                   <p className="text-xl font-bold">{review.name}</p>
@@ -56,9 +56,9 @@ const Ratings = () => {
             We do not have any review yet :(
           </p>
         )}
-        <div className="flex flex-row gap-5 w-max m-auto">
+        <div className="flex flex-col sm:flex-row gap-5 w-max m-auto">
           {reviews.length > 3 && (
-            <a href="/reviews" className="btn dark">
+            <a href="/reviews" className="btn dark w-max m-auto">
               See All Reviews
             </a>
           )}
