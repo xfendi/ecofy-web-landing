@@ -5,6 +5,8 @@ import { db } from "../firebase";
 
 import { AiOutlineDiscord, AiFillGithub } from "react-icons/ai";
 
+import Leaf from "../Assets/leaf.png";
+
 const Footer = () => {
   const [email, setEmail] = useState("");
 
@@ -41,9 +43,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-violet-200 rounded-3xl flex flex-col xl:flex-row items-start p-10 xl:p-20 xl:gap-20 gap-10">
+    <footer className="bg-gray-200 rounded-3xl flex flex-col xl:flex-row items-start p-10 xl:p-20 xl:gap-20 gap-10">
       <div className="flex flex-col gap-5 items-start justify-center text-start flex-1 w-full">
-        <h1 className="text-6xl sm:text-9xl font-bold">Ecofy</h1>
+        <h1 className="text-3xl font-bold">Ecofy</h1>
         <p className="text-lg text-gray-500 max-w-72">
           Stay updated with the latest events, tips, and eco news.
         </p>
@@ -63,16 +65,25 @@ const Footer = () => {
             Subscribe
           </button>
         </form>
-        <div className="flex flex-col sm:flex-row gap-1">
-          <p>© 2024 Ecofy, Inc. All rights reserved.</p>{" "}
-          <a href="/privacy-policy" className="underline w-max">
-            privacy policy
-          </a>
+        <div className="text-gray-500">
+          &copy; 2024 Ecofy.{" "}
+          <a
+            href="https://yolocode.pl"
+            className="hover:underline transition-all duration-300 text-black hover:text-green-500"
+            target="_blank"
+          >
+            Yolo Solutions
+          </a>{" "}
+          All rights reserved.
         </div>
       </div>
       <div className="flex flex-col gap-5 items-start text-start flex-1 w-full rounded-3xl">
         <div className="flex flex-col gap-5">
-          <h2 className="sm:text-9xl text-6xl font-bold">Socials</h2>
+          <h2 className="text-3xl font-bold">Socials</h2>
+          <p className="text-lg text-gray-500 max-w-96">
+            Follow us and stay connected for updates, exclusive content, and
+            more!
+          </p>
           <div className="flex flex-col sm:flex-row gap-5">
             <a
               href="https://discord.gg/Jm4jq7qykA"
@@ -91,6 +102,13 @@ const Footer = () => {
               GitHub
             </a>
           </div>
+          <a
+            href="/privacy-policy"
+            className="transition-all duration-300 text-gray-500 hover:text-black"
+            target="_blank"
+          >
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>
