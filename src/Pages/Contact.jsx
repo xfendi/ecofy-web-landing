@@ -109,7 +109,7 @@ const Contact = () => {
         </form>
 
         <div className="flex flex-col gap-5 flex-1">
-          <div className="bg-blue-200 rounded-3xl h-5"></div>
+          <div className="bg-blue-200 rounded-3xl flex-1"></div>
           <div className="bg-gray-100 rounded-3xl flex-1 flex flex-col gap-5 p-5">
             <div className="bg-white rounded-3xl flex flex-row gap-5 items-center p-5">
               <div className="bg-blue-200 w-max p-3 rounded-full">
@@ -118,16 +118,6 @@ const Contact = () => {
               <div className="flex flex-col text-start">
                 <h1 className="text-xl font-bold">Email</h1>
                 <p className="text-md text-gray-500">support@ecofy.site</p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-3xl flex flex-row gap-5 items-center p-5">
-              <div className="bg-blue-200 w-max p-3 rounded-full">
-                <FiPhone className="w-7 h-7" />
-              </div>
-              <div className="flex flex-col text-start">
-                <h1 className="text-xl font-bold">Phone</h1>
-                <p className="text-md text-gray-500">(+48) 123 456 789</p>
               </div>
             </div>
 
